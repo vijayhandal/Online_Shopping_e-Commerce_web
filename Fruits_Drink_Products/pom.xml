@@ -8,11 +8,11 @@
 		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>Fruits_Drink_Products</artifactId>
+	<groupId>com.buy_EZ</groupId>
+	<artifactId>Buy_EZ</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Fruits_Drink_Products</name>
-	<description>Demo project for Spring Boot</description>
+	<name>buy_EZ</name>
+	<description>Spring boot E-commerce application</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -37,6 +37,11 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
@@ -46,6 +51,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+		<dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>3.0.0</version>
+</dependency>
+		
 	</dependencies>
 
 	<build>
