@@ -26,8 +26,8 @@ public class Product {
 	private String imgUrl;
 	private String manufacturer;
 	
-//	@ManyToOne
-//	private Category categoryName;
+	@ManyToOne
+	private Category categoryName;
 
 	
 }

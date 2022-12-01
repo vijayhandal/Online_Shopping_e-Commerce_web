@@ -26,7 +26,7 @@ public class Cart {
 	private Integer totalAmount; 
 	private Integer productId;
 	
-//	@OneToMany
-//	private List<Product> productList = new ArrayList<>();
+	@OneToMany
+	private List<Product> productList = new ArrayList<>();
 
 }

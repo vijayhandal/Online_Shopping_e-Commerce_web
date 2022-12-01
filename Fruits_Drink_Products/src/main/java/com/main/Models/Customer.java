@@ -3,10 +3,12 @@ package com.main.Models;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.Email;
@@ -42,14 +44,14 @@ public class Customer {
 	private String phone;
 	@NotNull
 	private String address;
-//	
-//	@JsonIgnore
-//	@OneToOne
-//	private Cart cart;
-//	
-//	@JsonIgnore
-//	@OneToMany()
-//	private List<Order> orders = new ArrayList<>();
+	
+	@JsonIgnore
+	@OneToOne
+	private Cart cart;
+
+	@JsonIgnore
+	@OneToMany(cascade = CascadeType.ALL)
+	private List<Orders> orders = new ArrayList<>();
 	
 	
 }
