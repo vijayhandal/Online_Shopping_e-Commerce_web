@@ -38,7 +38,7 @@ public class Orders {
 	
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Customer customer;
-	
+	//one to many
 	@OneToMany
 	private List<Product> products = new ArrayList<>();
 
